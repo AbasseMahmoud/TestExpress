@@ -1,22 +1,26 @@
 const express = require('express')
+const {v4:uuidv4} =require('uuid')
 
-const port = 8000
+const port = process.env.port || 8000
 const app = express()
 
 students = [
     {
+        "id":uuidv4(),
         "nom":"Barry",
         "prenom":"Mahmoud",
         "Adresse":"Tanaff",
         "Telephone":78453412,
     },
     {
+        "id":uuidv4(),
         "nom":"Barry",
         "prenom":"Mahmoud",
         "Adresse":"Tanaff",
         "Telephone":78453412,
     },
     {
+        "id":uuidv4(),
         "nom":"Barry",
         "prenom":"Mahmoud",
         "Adresse":"Tanaff",
